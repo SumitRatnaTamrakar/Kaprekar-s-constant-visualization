@@ -46,6 +46,15 @@ def calculate_Kaprekars_routine_frequency(number):
  
     return counter
 
+def calculate_iteration_frequencies(frequency_array):
+    frequency_of_iterations = []
+    for number in range(-1, 7 + 1):
+        frequency_of_iterations.append(frequency_array.count(number))
+
+    return frequency_of_iterations
+
+# Graphs
+
 # Bar Chart
 def plot_bar_chart(number_array, frequency_array):
     plt.bar(number_array, frequency_array)
@@ -117,13 +126,40 @@ def plot_graphs(number_array, frequency_array):
     plot_line_graph(number_array, frequency_array)
     plot_scatter_plot(number_array, frequency_array)
 
+def plot_iteration_frequency_graph(iteration_frequency_array):
+    number_array = [number for number in range(-1, 7 + 1)]
+
+    colors_array = ['#003f5c', '#2f4b7c', '#665191', '#a05195', '#d45087', '#f95d6a', '#ff7c43', '#ffa600']
+
+    bar_labels = ['-1', '0', '1', '2', '3', '4', '5', '6', '7']
+    # bar_labels = ['-1', '0', '1', '2', '3', '4', '5', '6', '7']
+
+    plt.bar(number_array, iteration_frequency_array, color = colors_array)
+    
+    # Adding labels in each bar
+    for i in range(-1, len(iteration_frequency_array)):
+        plt.text(i - 1, iteration_frequency_array[i], iteration_frequency_array[i], ha = 'center')
+
+    plt.title("Frequency of iterations required for 4-digit numbers to result in Kaprekar's constant")
+    
+    plt.xlabel('Number of iterations')
+    plt.ylabel('Frequency')
+
+    plt.show()
+
 def main():
     numbers_array = []
     numbers_array = [number for number in range(1000, 9999 + 1)]
 
     frequency_array = calculate_frequency_array()
 
+    iteration_frequency_array = calculate_iteration_frequencies(frequency_array)
+
+    print(iteration_frequency_array)
+
     plot_graphs(numbers_array, frequency_array)
+
+    plot_iteration_frequency_graph(iteration_frequency_array)
 
 if __name__ == "__main__":
     main()
