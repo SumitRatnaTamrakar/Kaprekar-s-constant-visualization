@@ -155,9 +155,6 @@ def plot_iteration_frequency_graph(iteration_frequency_array):
 
     colors_array = ['#003f5c', '#2f4b7c', '#665191', '#a05195', '#d45087', '#f95d6a', '#ff7c43', '#ffa600']
 
-    bar_labels = ['-1', '0', '1', '2', '3', '4', '5', '6', '7']
-    # bar_labels = ['-1', '0', '1', '2', '3', '4', '5', '6', '7']
-
     plt.bar(number_array, iteration_frequency_array, color = colors_array)
     
     # Adding labels in each bar
