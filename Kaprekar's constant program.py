@@ -67,6 +67,8 @@ def plot_bar_chart(number_array, frequency_array):
 def plot_colored_bar_chart(number_array, frequency_array):
     colors_array = []
     for frequency in frequency_array:
+        """
+        Using Tableau colors
         match frequency:
             case -1:
                 colors_array.append('tab:gray')
@@ -86,7 +88,29 @@ def plot_colored_bar_chart(number_array, frequency_array):
                 colors_array.append('tab:brown')
             case 7:
                 colors_array.append('tab:pink')
-    
+             """
+        
+        match frequency:
+            case -1:
+                colors_array.append('#003f5c')
+            case 0:
+                colors_array.append('#2f4b7c')
+            case 1:
+                colors_array.append('#665191')
+            case 2:
+                colors_array.append('#a05195')
+            case 3:
+                colors_array.append('#d45087')
+            case 4:
+                colors_array.append('#f95d6a')
+            case 5:
+                colors_array.append('#ff7c43')
+            case 6:
+                colors_array.append('#ffa600')
+            case 7:
+                colors_array.append('#ead637')
+
+
     plt.bar(number_array, frequency_array, color = colors_array)
 
     plt.title("Number of iterations required for each 4-digit number to result in Kaprekar's constant")
@@ -154,8 +178,6 @@ def main():
     frequency_array = calculate_frequency_array()
 
     iteration_frequency_array = calculate_iteration_frequencies(frequency_array)
-
-    print(iteration_frequency_array)
 
     plot_graphs(numbers_array, frequency_array)
 
