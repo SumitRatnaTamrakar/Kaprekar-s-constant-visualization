@@ -90,6 +90,7 @@ def plot_colored_bar_chart(number_array, frequency_array):
                 colors_array.append('tab:pink')
              """
         
+        # Using Hex codes for colors
         match frequency:
             case -1:
                 colors_array.append('#003f5c')
