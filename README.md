@@ -71,6 +71,7 @@ Data represented or visualized in this project includes:
 ![Figure 4 - Scatter plot!](/Images/Figure_4-Scatter-plot.png "Figure 4: Scatter plot - 4-digit number vs Number of iterations to result in Kaprekar's constant (6174)")
 
 - Figure 5: Frequency of iterations required for 4-digit numbers to result in Kaprekar's number
+
 ![Figure 5 - Bar chart!](https://github.com/SumitRTamrakar/Kaprekar-s-constant-visualization/blob/main/Images/Figure_5-Frequency-Bar-chart.png "Figure 5: Frequency of iterations required for 4-digit numbers to result in Kaprekar's number")
 
 
