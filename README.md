@@ -30,6 +30,8 @@ References:
 
 [6174 - Wikipedia](https://en.wikipedia.org/wiki/6174)
 
+[Kaprekar's Constant - Prime Newtons - Youtube](https://youtu.be/xtyNuOikdE4?si=PKPpSbdQjZZckDyt)
+
 ## Project Dependencies
 
 - Matplotlib
