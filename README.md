@@ -48,7 +48,7 @@ Data represented or visualized in this project includes:
   - Colored bar plot
   - Line graph
   - Scatter plot
-- Frequency of iterations required for 4-digit numbers to result in Kaprekar's constant
+  - Frequency of iterations required for 4-digit numbers to result in Kaprekar's constant
   ### Data represented using:
     - Bar plot
 
